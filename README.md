@@ -3,11 +3,11 @@
 **Countries to Add**
 - [x] Tanzania
 - [x] Nigeria
-- [] Malawi
-- [] Rwanda
+- [ ] Malawi
+- [ ] Rwanda
 **Others**
-- [] Configure static Maps API
-- [] Unet feature extraction from images
+- [ ] Configure static Maps API
+- [ ] Unet feature extraction from images
 
 ### DHS
 #### HR (Household Recode files)
