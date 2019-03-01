@@ -3,9 +3,10 @@ import pandas as pd
 from pandas import DataFrame
 import numpy as np
 import dbfread
+import sys
 
 if __name__ == '__main__':
-    country = raw_input('Enter Country Name: ')
+    country = sys.argv[1]
     dataFile = country + '/HR/HR.csv' # Rename Houehold Recode folder as HR, the csv as HR.csv
     data = pd.read_csv(dataFile)
     data.head()
