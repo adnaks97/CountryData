@@ -1,0 +1,5241 @@
+﻿[Dictionary]
+Version=CSPro 6.3
+Label=NGHR71FL
+Name=NGHR71FL_DICT
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Absolute
+ZeroFill=No
+DecimalChar=No
+
+[Languages]
+
+[Level]
+Label=HOUSEHOLD
+Name=HOUSEHOLD
+
+[IdItems]
+
+[Item]
+Label=Case Identification
+Name=HHID
+Start=1
+Len=12
+DataType=Alpha
+
+[Record]
+Label=RECORD1
+Name=RECORD1
+RecordTypeValue=''
+RecordLen=4191
+
+[Item]
+Label=Country code and phase
+Name=HV000
+Start=13
+Len=3
+DataType=Alpha
+
+[Item]
+Label=Cluster number
+Name=HV001
+Start=16
+Len=8
+
+[Item]
+Label=Household number
+Name=HV002
+Start=24
+Len=4
+
+[Item]
+Label=Respondent's line number (answering Household questionnaire)
+Name=HV003
+Start=28
+Len=3
+
+[ValueSet]
+Label=Respondent's line number (answering Household questionnaire)
+Name=HV003_VS1
+Value=0;Incomplete household
+Value=1:999
+
+[Item]
+Label=Ultimate area unit
+Name=HV004
+Start=31
+Len=4
+
+[Item]
+Label=Household sample weight (6 decimals)
+Name=HV005
+Start=35
+Len=8
+
+[Item]
+Label=Month of interview
+Name=HV006
+Start=43
+Len=2
+
+[ValueSet]
+Label=Month of interview
+Name=HV006_VS1
+Value=1:12
+
+[Item]
+Label=Year of interview
+Name=HV007
+Start=45
+Len=4
+
+[ValueSet]
+Label=Year of interview
+Name=HV007_VS1
+Value=2010:2015
+
+[Item]
+Label=Date of interview (CMC)
+Name=HV008
+Start=49
+Len=4
+
+[Item]
+Label=Number of household members
+Name=HV009
+Start=53
+Len=2
+
+[ValueSet]
+Label=Number of household members
+Name=HV009_VS1
+Value=0:90
+
+[Item]
+Label=Number of eligible women in household
+Name=HV010
+Start=55
+Len=2
+
+[ValueSet]
+Label=Number of eligible women in household
+Name=HV010_VS1
+Value=0:20
+
+[Item]
+Label=NA - Number of eligible men in household
+Name=HV011
+Start=57
+Len=2
+
+[ValueSet]
+Label=NA - Number of eligible men in household
+Name=HV011_VS1
+Value=0:20
+
+[Item]
+Label=Number of de jure members
+Name=HV012
+Start=59
+Len=2
+
+[ValueSet]
+Label=Number of de jure members
+Name=HV012_VS1
+Value=0:90
+
+[Item]
+Label=Number of de facto members
+Name=HV013
+Start=61
+Len=2
+
+[ValueSet]
+Label=Number of de facto members
+Name=HV013_VS1
+Value=0:90
+
+[Item]
+Label=Number of children 5 and under (de jure)
+Name=HV014
+Start=63
+Len=2
+
+[ValueSet]
+Label=Number of children 5 and under (de jure)
+Name=HV014_VS1
+Value=0:20
+
+[Item]
+Label=Result of household interview
+Name=HV015
+Start=65
+Len=1
+
+[ValueSet]
+Label=Result of household interview
+Name=HV015_VS1
+Value=1;Completed
+Value=2;No Household member/no competent member at home
+Value=3;Entire Household absent for extended period of time
+Value=4;Postponed
+Value=5;Refused
+Value=6;Dwelling vacant or address not a dwelling
+Value=7;Dwelling destroyed
+Value=8;Dwelling not found
+Value=9;Other
+
+[Item]
+Label=Day of interview
+Name=HV016
+Start=66
+Len=2
+
+[ValueSet]
+Label=Day of interview
+Name=HV016_VS1
+Value=1:31
+
+[Item]
+Label=Number of visits
+Name=HV017
+Start=68
+Len=1
+
+[ValueSet]
+Label=Number of visits
+Name=HV017_VS1
+Value=1:8
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Interviewer identification
+Name=HV018
+Start=69
+Len=4
+
+[ValueSet]
+Label=Interviewer identification
+Name=HV018_VS1
+Value=1:3704
+
+[Item]
+Label=NA - Keyer identification
+Name=HV019
+Start=73
+Len=2
+
+[Item]
+Label=Ever-married sample
+Name=HV020
+Start=75
+Len=1
+
+[ValueSet]
+Label=Ever-married sample
+Name=HV020_VS1
+Value=0;All woman sample
+Value=1;Ever married sample
+
+[Item]
+Label=Primary sampling unit
+Name=HV021
+Start=76
+Len=4
+
+[Item]
+Label=Sample strata for sampling errors
+Name=HV022
+Start=80
+Len=4
+
+[ValueSet]
+Label=Sample strata for sampling errors
+Name=HV022_VS1
+Value=0;National
+Value=1;Sokoto - Urban
+Value=2;Sokoto - Rural
+Value=3;Zamfara - Urban
+Value=4;Zamfara - Rural
+Value=5;Katsina - Urban
+Value=6;Katsina - Rural
+Value=7;Jigawa - Urban
+Value=8;Jigawa - Rural
+Value=9;Yobe - Urban
+Value=10;Yobe - Rural
+Value=11;Borno - Urban
+Value=13;Adamawa - Urban
+Value=14;Adamawa - Rural
+Value=15;Gombe - Urban
+Value=16;Gombe - Rural
+Value=17;Bauchi - Urban
+Value=18;Bauchi - Rural
+Value=19;Kano - Urban
+Value=20;Kano - Rural
+Value=21;Kaduna - Urban
+Value=22;Kaduna - Rural
+Value=23;Kebbi - Urban
+Value=24;Kebbi - Rural
+Value=25;Niger - Urban
+Value=26;Niger - Rural
+Value=27;FCT Abuja - Urban
+Value=28;FCT Abuja - Rural
+Value=29;Nasarawa - Urban
+Value=30;Nasarawa - Rural
+Value=31;Plateau - Urban
+Value=32;Plateau - Rural
+Value=33;Taraba - Urban
+Value=34;Taraba - Rural
+Value=35;Benue - Urban
+Value=36;Benue - Rural
+Value=37;Kogi - Urban
+Value=38;Kogi - Rural
+Value=39;Kwara - Urban
+Value=40;Kwara - Rural
+Value=41;Oyo - Urban
+Value=42;Oyo - Rural
+Value=43;Osun - Urban
+Value=44;Osun - Rural
+Value=45;Ekiti - Urban
+Value=46;Ekiti - Rural
+Value=47;Ondo - Urban
+Value=48;Ondo - Rural
+Value=49;Edo - Urban
+Value=50;Edo - Rural
+Value=51;Anambra - Urban
+Value=52;Anambra - Rural
+Value=53;Enugu - Urban
+Value=54;Enugu - Rural
+Value=55;Ebonyi - Urban
+Value=56;Ebonyi - Rural
+Value=57;Cross River - Urban
+Value=58;Cross River - Rural
+Value=59;Akwa Ibom - Urban
+Value=60;Akwa Ibom - Rural
+Value=61;Abia - Urban
+Value=62;Abia - Rural
+Value=63;Imo - Urban
+Value=64;Imo - Rural
+Value=65;Rivers - Urban
+Value=66;Rivers - Rural
+Value=67;Bayelsa - Urban
+Value=68;Bayelsa - Rural
+Value=69;Delta - Urban
+Value=70;Delta - Rural
+Value=71;Lagos - Urban
+Value=73;Ogun - Urban
+Value=74;Ogun - Rural
+
+[Item]
+Label=Stratification used in sample design
+Name=HV023
+Start=84
+Len=2
+
+[ValueSet]
+Label=Stratification used in sample design
+Name=HV023_VS1
+Value=0;National
+Value=1;Sokoto - Urban
+Value=2;Sokoto - Rural
+Value=3;Zamfara - Urban
+Value=4;Zamfara - Rural
+Value=5;Katsina - Urban
+Value=6;Katsina - Rural
+Value=7;Jigawa - Urban
+Value=8;Jigawa - Rural
+Value=9;Yobe - Urban
+Value=10;Yobe - Rural
+Value=11;Borno - Urban
+Value=13;Adamawa - Urban
+Value=14;Adamawa - Rural
+Value=15;Gombe - Urban
+Value=16;Gombe - Rural
+Value=17;Bauchi - Urban
+Value=18;Bauchi - Rural
+Value=19;Kano - Urban
+Value=20;Kano - Rural
+Value=21;Kaduna - Urban
+Value=22;Kaduna - Rural
+Value=23;Kebbi - Urban
+Value=24;Kebbi - Rural
+Value=25;Niger - Urban
+Value=26;Niger - Rural
+Value=27;FCT Abuja - Urban
+Value=28;FCT Abuja - Rural
+Value=29;Nasarawa - Urban
+Value=30;Nasarawa - Rural
+Value=31;Plateau - Urban
+Value=32;Plateau - Rural
+Value=33;Taraba - Urban
+Value=34;Taraba - Rural
+Value=35;Benue - Urban
+Value=36;Benue - Rural
+Value=37;Kogi - Urban
+Value=38;Kogi - Rural
+Value=39;Kwara - Urban
+Value=40;Kwara - Rural
+Value=41;Oyo - Urban
+Value=42;Oyo - Rural
+Value=43;Osun - Urban
+Value=44;Osun - Rural
+Value=45;Ekiti - Urban
+Value=46;Ekiti - Rural
+Value=47;Ondo - Urban
+Value=48;Ondo - Rural
+Value=49;Edo - Urban
+Value=50;Edo - Rural
+Value=51;Anambra - Urban
+Value=52;Anambra - Rural
+Value=53;Enugu - Urban
+Value=54;Enugu - Rural
+Value=55;Ebonyi - Urban
+Value=56;Ebonyi - Rural
+Value=57;Cross River - Urban
+Value=58;Cross River - Rural
+Value=59;Akwa Ibom - Urban
+Value=60;Akwa Ibom - Rural
+Value=61;Abia - Urban
+Value=62;Abia - Rural
+Value=63;Imo - Urban
+Value=64;Imo - Rural
+Value=65;Rivers - Urban
+Value=66;Rivers - Rural
+Value=67;Bayelsa - Urban
+Value=68;Bayelsa - Rural
+Value=69;Delta - Urban
+Value=70;Delta - Rural
+Value=71;Lagos - Urban
+Value=73;Ogun - Urban
+Value=74;Ogun - Rural
+
+[Item]
+Label=Region
+Name=HV024
+Start=86
+Len=2
+
+[ValueSet]
+Label=Region
+Name=HV024_VS1
+Value=1;North central
+Value=2;North east
+Value=3;North west
+Value=4;South east
+Value=5;South south
+Value=6;South west
+
+[Item]
+Label=Type of place of residence
+Name=HV025
+Start=88
+Len=1
+
+[ValueSet]
+Label=Type of place of residence
+Name=HV025_VS1
+Value=1;Urban
+Value=2;Rural
+
+[Item]
+Label=NA - Place of residence
+Name=HV026
+Start=89
+Len=1
+
+[ValueSet]
+Label=NA - Place of residence
+Name=HV026_VS1
+Value=0;Capital, large city
+Value=1;Small city
+Value=2;Town
+Value=3;Countryside
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Household selected for male interview
+Name=HV027
+Start=90
+Len=1
+
+[ValueSet]
+Label=Household selected for male interview
+Name=HV027_VS1
+Value=0;Not selected
+Value=1;Men's survey
+Value=2;Husband's survey
+
+[Item]
+Label=Household weight for male subsample (6 decimals)
+Name=HV028
+Start=91
+Len=8
+
+[Item]
+Label=Field supervisor
+Name=HV030
+Start=99
+Len=4
+
+[ValueSet]
+Label=Field supervisor
+Name=HV030_VS1
+Value=1:3701
+
+[Item]
+Label=NA - Field editor
+Name=HV031
+Start=103
+Len=3
+
+[Item]
+Label=NA - Office editor
+Name=HV032
+Start=106
+Len=2
+
+[Item]
+Label=Number of eligible children for height and weight
+Name=HV035
+Start=108
+Len=2
+
+[ValueSet]
+Label=Number of eligible children for height and weight
+Name=HV035_VS1
+Value=0:20
+
+[Item]
+Label=Cluster altitude in meters
+Name=HV040
+Start=110
+Len=4
+
+[ValueSet]
+Label=Cluster altitude in meters
+Name=HV040_VS1
+Value=9999;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Total adults measured
+Name=HV041
+Start=114
+Len=2
+
+[ValueSet]
+Label=NA - Total adults measured
+Name=HV041_VS1
+Value=0:20
+
+[Item]
+Label=Household selected for hemoglobin
+Name=HV042
+Start=116
+Len=1
+
+[ValueSet]
+Label=Household selected for hemoglobin
+Name=HV042_VS1
+Value=0;Not selected
+Value=1;Selected
+
+[Item]
+Label=NA - Household selected for Domestic Violence module
+Name=HV044
+Start=117
+Len=1
+
+[ValueSet]
+Label=NA - Household selected for Domestic Violence module
+Name=HV044_VS1
+Value=0;Household not selected
+Value=1;Household selected
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Number of de-jure children 5-14 for child labor module
+Name=CHLA
+Start=118
+Len=2
+
+[ValueSet]
+Label=NA - Number of de-jure children 5-14 for child labor module
+Name=CHLA_VS1
+Value=0:99
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Source of drinking water
+Name=HV201
+Start=120
+Len=2
+
+[ValueSet]
+Label=Source of drinking water
+Name=HV201_VS1
+Value=10;PIPED WATER
+Value=11;Piped into dwelling
+Value=12;Piped to yard/plot
+Value=13;Public tap/standpipe
+Value=14;Piped to neighbor
+Value=20;TUBE WELL WATER
+Value=21;Tube well or borehole
+Value=30;DUG WELL (OPEN/PROTECTED)
+Value=31;Protected well
+Value=32;Unprotected well
+Value=40;SURFACE WATER
+Value=41;Protected spring
+Value=42;Unprotected spring
+Value=43;River/dam/lake/ponds/stream/canal/irrigation channel
+Value=51;Rainwater
+Value=61;Tanker truck
+Value=62;Cart with small tank
+Value=71;Bottled water
+Value=72;Sachet water
+Value=96;Other
+
+[Item]
+Label=Source of non-drinking water
+Name=HV202
+Start=122
+Len=2
+
+[ValueSet]
+Label=Source of non-drinking water
+Name=HV202_VS1
+Value=10;PIPED WATER
+Value=11;Piped into dwelling
+Value=12;Piped to yard/plot
+Value=13;Public tap/standpipe
+Value=14;Piped to neighbor
+Value=20;TUBE WELL WATER
+Value=21;Tube well or borehole
+Value=30;DUG WELL (OPEN/PROTECTED)
+Value=31;Protected well
+Value=32;Unprotected well
+Value=40;SURFACE WATER
+Value=41;Protected spring
+Value=42;Unprotected spring
+Value=43;River/dam/lake/ponds/stream/canal/irrigation channel
+Value=51;Rainwater
+Value=61;Tanker truck
+Value=62;Cart with small tank
+Value=71;Bottled water
+Value=72;Sachet water
+Value=96;Other
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Time to get to water source (minutes)
+Name=HV204
+Start=124
+Len=3
+
+[ValueSet]
+Label=Time to get to water source (minutes)
+Name=HV204_VS1
+Value=1:900
+Value=996;On premises
+Value=998;Don't know
+Value='   ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Type of toilet facility
+Name=HV205
+Start=127
+Len=2
+
+[ValueSet]
+Label=Type of toilet facility
+Name=HV205_VS1
+Value=10;FLUSH TOILET
+Value=11;Flush to piped sewer system
+Value=12;Flush to septic tank
+Value=13;Flush to pit latrine
+Value=14;Flush to somewhere else
+Value=15;Flush, don't know where
+Value=20;PIT TOILET LATRINE
+Value=21;Ventilated Improved Pit latrine (VIP)
+Value=22;Pit latrine with slab
+Value=23;Pit latrine without slab/open pit
+Value=30;NO FACILITY
+Value=31;No facility/bush/field
+Value=41;Composting toilet
+Value=42;Bucket toilet
+Value=43;Hanging toilet/latrine
+Value=96;Other
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has electricity
+Name=HV206
+Start=129
+Len=1
+
+[ValueSet]
+Label=Has electricity
+Name=HV206_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has radio
+Name=HV207
+Start=130
+Len=1
+
+[ValueSet]
+Label=Has radio
+Name=HV207_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has television
+Name=HV208
+Start=131
+Len=1
+
+[ValueSet]
+Label=Has television
+Name=HV208_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has refrigerator
+Name=HV209
+Start=132
+Len=1
+
+[ValueSet]
+Label=Has refrigerator
+Name=HV209_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has bicycle
+Name=HV210
+Start=133
+Len=1
+
+[ValueSet]
+Label=Has bicycle
+Name=HV210_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has motorcycle/scooter
+Name=HV211
+Start=134
+Len=1
+
+[ValueSet]
+Label=Has motorcycle/scooter
+Name=HV211_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has car/truck
+Name=HV212
+Start=135
+Len=1
+
+[ValueSet]
+Label=Has car/truck
+Name=HV212_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Main floor material
+Name=HV213
+Start=136
+Len=2
+
+[ValueSet]
+Label=Main floor material
+Name=HV213_VS1
+Value=10;NATURAL
+Value=11;Earth, sand
+Value=12;Dung
+Value=20;RUDIMENTARY
+Value=21;Wood planks
+Value=22;Palm, bamboo
+Value=30;FINISHED
+Value=31;Parquet, polished wood
+Value=32;Vinyl, asphalt strips
+Value=33;Ceramic tiles
+Value=34;Cement
+Value=35;Carpet
+Value=96;Other
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Main wall material
+Name=HV214
+Start=138
+Len=2
+
+[ValueSet]
+Label=Main wall material
+Name=HV214_VS1
+Value=10;NATURAL
+Value=11;No walls
+Value=12;Cane/palm/trunks
+Value=13;Dirt
+Value=20;RUDIMENTARY
+Value=21;Bamboo with mud
+Value=22;Stone with mud
+Value=23;Uncovered adobe
+Value=24;Plywood
+Value=25;Cardboard
+Value=26;Reused wood
+Value=30;FINISHED
+Value=31;Cement
+Value=32;Stone with lime/cement
+Value=33;Bricks
+Value=34;Cement blocks
+Value=35;Covered adobe
+Value=36;Wood planks/shingles
+Value=96;Other
+
+[Item]
+Label=Main roof material
+Name=HV215
+Start=140
+Len=2
+
+[ValueSet]
+Label=Main roof material
+Name=HV215_VS1
+Value=10;NATURAL
+Value=11;No roof
+Value=12;Thatch/palm leaf
+Value=13;Sod
+Value=20;RUDIMENTARY
+Value=21;Rustic mat
+Value=22;Palm/bamboo
+Value=23;Wood planks
+Value=24;Cardboard
+Value=30;FINISHED
+Value=31;Zinc/metal
+Value=32;Wood
+Value=33;Calamine/cement fiber
+Value=34;Ceramic tiles
+Value=35;Cement
+Value=36;Roofing shingles
+Value=96;Other
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Number of rooms used for sleeping
+Name=HV216
+Start=142
+Len=2
+
+[ValueSet]
+Label=Number of rooms used for sleeping
+Name=HV216_VS1
+Value=0:24
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Relationship structure
+Name=HV217
+Start=144
+Len=1
+
+[ValueSet]
+Label=Relationship structure
+Name=HV217_VS1
+Value=0;No adults
+Value=1;One adult
+Value=2;Two adults, opposite sex
+Value=3;Two adults, same sex
+Value=4;Three+ related adults
+Value=5;Unrelated adults
+
+[Item]
+Label=Line number of head of household
+Name=HV218
+Start=145
+Len=2
+
+[ValueSet]
+Label=Line number of head of household
+Name=HV218_VS1
+Value=1:90
+
+[Item]
+Label=Sex of head of household
+Name=HV219
+Start=147
+Len=1
+
+[ValueSet]
+Label=Sex of head of household
+Name=HV219_VS1
+Value=1;Male
+Value=2;Female
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Age of head of household
+Name=HV220
+Start=148
+Len=2
+
+[ValueSet]
+Label=Age of head of household
+Name=HV220_VS1
+Value=0:96
+Value=97;97+
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has telephone (land-line)
+Name=HV221
+Start=150
+Len=1
+
+[ValueSet]
+Label=Has telephone (land-line)
+Name=HV221_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Share toilet with other households
+Name=HV225
+Start=151
+Len=1
+
+[ValueSet]
+Label=Share toilet with other households
+Name=HV225_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Type of cooking fuel
+Name=HV226
+Start=152
+Len=2
+
+[ValueSet]
+Label=Type of cooking fuel
+Name=HV226_VS1
+Value=1;Electricity
+Value=2;LPG
+Value=3;Natural gas
+Value=4;Biogas
+Value=5;Kerosene
+Value=6;Coal, lignite
+Value=7;Charcoal
+Value=8;Wood
+Value=9;Straw/shrubs/grass
+Value=10;Agricultural crop
+Value=11;Animal dung
+Value=95;No food cooked in house
+Value=96;Other
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has mosquito bed net for sleeping
+Name=HV227
+Start=154
+Len=1
+
+[ValueSet]
+Label=Has mosquito bed net for sleeping
+Name=HV227_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Children under 5 slept under mosquito bed net last night
+Name=HV228
+Start=155
+Len=1
+
+[ValueSet]
+Label=Children under 5 slept under mosquito bed net last night
+Name=HV228_VS1
+Value=0;No
+Value=1;All children
+Value=2;Some children
+Value=3;No net in household
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Place where household members wash their hands
+Name=HV230A
+Start=156
+Len=1
+
+[ValueSet]
+Label=NA - Place where household members wash their hands
+Name=HV230A_VS1
+Value=1;Observed
+Value=2;Not observed: not in dwelling
+Value=3;Not observed: no permission to see
+Value=4;Not observed: other reason
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Presence of water at hand washing place
+Name=HV230B
+Start=157
+Len=1
+
+[ValueSet]
+Label=NA - Presence of water at hand washing place
+Name=HV230B_VS1
+Value=0;Water not available
+Value=1;Water is available
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Items present: Soap or detergent
+Name=HV232
+Start=158
+Len=1
+
+[ValueSet]
+Label=NA - Items present: Soap or detergent
+Name=HV232_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';NotAppl
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Items present: Ash, mud, sand
+Name=HV232B
+Start=159
+Len=1
+
+[ValueSet]
+Label=NA - Items present: Ash, mud, sand
+Name=HV232B_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';NotAppl
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Items present: CS
+Name=HV232C
+Start=160
+Len=1
+
+[ValueSet]
+Label=NA - Items present: CS
+Name=HV232C_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';NotAppl
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Items present: CS
+Name=HV232D
+Start=161
+Len=1
+
+[ValueSet]
+Label=NA - Items present: CS
+Name=HV232D_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';NotAppl
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Items present: CS
+Name=HV232E
+Start=162
+Len=1
+
+[ValueSet]
+Label=NA - Items present: CS
+Name=HV232E_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';NotAppl
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Items present: None
+Name=HV232Y
+Start=163
+Len=1
+
+[ValueSet]
+Label=NA - Items present: None
+Name=HV232Y_VS1
+Value=0;No
+Value=1;Yes: no cleansing agent observed
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';NotAppl
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Result of salt test for iodine (PPM)
+Name=HV234
+Start=164
+Len=3
+
+[ValueSet]
+Label=NA - Result of salt test for iodine (PPM)
+Name=HV234_VS1
+Value=0;0 PPM (no iodine)
+Value=7;Below 15 PPM
+Value=15;15 PPM and above
+Value=30;30 PPM
+Value=994;Salt not tested
+Value=995;No salt in household
+Value=999;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Result of salt test for iodine
+Name=HV234A
+Start=167
+Len=1
+
+[ValueSet]
+Label=NA - Result of salt test for iodine
+Name=HV234A_VS1
+Value=0;No iodine
+Value=1;Iodine present
+Value=3;No salt in household
+Value=6;Salt not tested
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Location of source for water
+Name=HV235
+Start=168
+Len=1
+
+[ValueSet]
+Label=Location of source for water
+Name=HV235_VS1
+Value=1;In own dwelling
+Value=2;In own yard/plot
+Value=3;Elsewhere
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Person fetching water
+Name=HV236
+Start=169
+Len=1
+
+[ValueSet]
+Label=NA - Person fetching water
+Name=HV236_VS1
+Value=1;Adult woman
+Value=2;Adult man
+Value=3;Female child under 15 years old
+Value=4;Male child under 15 years old
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Anything done to water to make safe to drink
+Name=HV237
+Start=170
+Len=1
+
+[ValueSet]
+Label=NA - Anything done to water to make safe to drink
+Name=HV237_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: boil
+Name=HV237A
+Start=171
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: boil
+Name=HV237A_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: add bleach/chlorine
+Name=HV237B
+Start=172
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: add bleach/chlorine
+Name=HV237B_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: strain through a cloth
+Name=HV237C
+Start=173
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: strain through a cloth
+Name=HV237C_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: use water filter
+Name=HV237D
+Start=174
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: use water filter
+Name=HV237D_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: solar disinfection
+Name=HV237E
+Start=175
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: solar disinfection
+Name=HV237E_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: let it stand and settle
+Name=HV237F
+Start=176
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: let it stand and settle
+Name=HV237F_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: CS
+Name=HV237G
+Start=177
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: CS
+Name=HV237G_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: CS
+Name=HV237H
+Start=178
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: CS
+Name=HV237H_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: CS
+Name=HV237I
+Start=179
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: CS
+Name=HV237I_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: CS
+Name=HV237J
+Start=180
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: CS
+Name=HV237J_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: CS
+Name=HV237K
+Start=181
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: CS
+Name=HV237K_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: other
+Name=HV237X
+Start=182
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: other
+Name=HV237X_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Water usually treated by: don't know
+Name=HV237Z
+Start=183
+Len=1
+
+[ValueSet]
+Label=NA - Water usually treated by: don't know
+Name=HV237Z_VS1
+Value=0;No
+Value=1;Yes: don't know what is done to water
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Number of households sharing toilet
+Name=HV238
+Start=184
+Len=2
+
+[ValueSet]
+Label=Number of households sharing toilet
+Name=HV238_VS1
+Value=2:9
+Value=95;10 or more households
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Food cooked on stove or open fire
+Name=HV239
+Start=186
+Len=1
+
+[ValueSet]
+Label=NA - Food cooked on stove or open fire
+Name=HV239_VS1
+Value=1;Open fire
+Value=2;Open stove
+Value=3;Closed stove with chimney
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Household has a chimney, hood or neither
+Name=HV240
+Start=187
+Len=1
+
+[ValueSet]
+Label=NA - Household has a chimney, hood or neither
+Name=HV240_VS1
+Value=0;Neither chimney or hood
+Value=1;Chimney
+Value=2;Hood
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Food cooked in the house/ separate building/ outdoors
+Name=HV241
+Start=188
+Len=1
+
+[ValueSet]
+Label=NA - Food cooked in the house/ separate building/ outdoors
+Name=HV241_VS1
+Value=1;In the house
+Value=2;In a separate building
+Value=3;Outdoors
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Household has separate room used as kitchen
+Name=HV242
+Start=189
+Len=1
+
+[ValueSet]
+Label=NA - Household has separate room used as kitchen
+Name=HV242_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Has mobile telephone
+Name=HV243A
+Start=190
+Len=1
+
+[ValueSet]
+Label=Has mobile telephone
+Name=HV243A_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has watch
+Name=HV243B
+Start=191
+Len=1
+
+[ValueSet]
+Label=Has watch
+Name=HV243B_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has animal-drawn cart
+Name=HV243C
+Start=192
+Len=1
+
+[ValueSet]
+Label=Has animal-drawn cart
+Name=HV243C_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has boat with a motor
+Name=HV243D
+Start=193
+Len=1
+
+[ValueSet]
+Label=Has boat with a motor
+Name=HV243D_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Owns land usable for agriculture
+Name=HV244
+Start=194
+Len=1
+
+[ValueSet]
+Label=Owns land usable for agriculture
+Name=HV244_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Hectares of agricultural land (1 decimal)
+Name=HV245
+Start=195
+Len=3
+
+[ValueSet]
+Label=Hectares of agricultural land (1 decimal)
+Name=HV245_VS1
+Value=0:949
+Value=950;95 or more
+Value=998;Unknown
+Value=999;Missing
+Name=MISSING,Special
+Value='   ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Owns livestock, herds or farm animals
+Name=HV246
+Start=198
+Len=1
+
+[ValueSet]
+Label=Owns livestock, herds or farm animals
+Name=HV246_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Owns cattle
+Name=HV246A
+Start=199
+Len=2
+
+[ValueSet]
+Label=Owns cattle
+Name=HV246A_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Owns cows/ bulls
+Name=HV246B
+Start=201
+Len=2
+
+[ValueSet]
+Label=Owns cows/ bulls
+Name=HV246B_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Owns horses/ donkeys/ mules
+Name=HV246C
+Start=203
+Len=2
+
+[ValueSet]
+Label=Owns horses/ donkeys/ mules
+Name=HV246C_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Owns goats
+Name=HV246D
+Start=205
+Len=2
+
+[ValueSet]
+Label=Owns goats
+Name=HV246D_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Owns sheep
+Name=HV246E
+Start=207
+Len=2
+
+[ValueSet]
+Label=Owns sheep
+Name=HV246E_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Owns chickens
+Name=HV246F
+Start=209
+Len=2
+
+[ValueSet]
+Label=Owns chickens
+Name=HV246F_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Owns CS
+Name=HV246G
+Start=211
+Len=2
+
+[ValueSet]
+Label=NA - Owns CS
+Name=HV246G_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Owns CS
+Name=HV246H
+Start=213
+Len=2
+
+[ValueSet]
+Label=NA - Owns CS
+Name=HV246H_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Owns CS
+Name=HV246I
+Start=215
+Len=2
+
+[ValueSet]
+Label=NA - Owns CS
+Name=HV246I_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Owns CS
+Name=HV246J
+Start=217
+Len=2
+
+[ValueSet]
+Label=NA - Owns CS
+Name=HV246J_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Owns CS
+Name=HV246K
+Start=219
+Len=2
+
+[ValueSet]
+Label=NA - Owns CS
+Name=HV246K_VS1
+Value=0;None
+Value=1:94
+Value=95;95 or more
+Value=98;Unknown
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Has bank account
+Name=HV247
+Start=221
+Len=1
+
+[ValueSet]
+Label=Has bank account
+Name=HV247_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Frequency household members smoke inside the house
+Name=HV252
+Start=222
+Len=1
+
+[ValueSet]
+Label=NA - Frequency household members smoke inside the house
+Name=HV252_VS1
+Value=0;Never
+Value=1;Daily
+Value=2;Weekly
+Value=3;Monthly
+Value=4;Less than monthly
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has dwelling been sprayed against mosquitoes in last 12 months
+Name=HV253
+Start=223
+Len=1
+
+[ValueSet]
+Label=Has dwelling been sprayed against mosquitoes in last 12 months
+Name=HV253_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Dwelling sprayed by: government worker/program
+Name=HV253A
+Start=224
+Len=1
+
+[ValueSet]
+Label=Dwelling sprayed by: government worker/program
+Name=HV253A_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Dwelling sprayed by: private company
+Name=HV253B
+Start=225
+Len=1
+
+[ValueSet]
+Label=Dwelling sprayed by: private company
+Name=HV253B_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Dwelling sprayed by: NGO
+Name=HV253C
+Start=226
+Len=1
+
+[ValueSet]
+Label=Dwelling sprayed by: NGO
+Name=HV253C_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253D
+Start=227
+Len=1
+
+[ValueSet]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253D_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253E
+Start=228
+Len=1
+
+[ValueSet]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253E_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253F
+Start=229
+Len=1
+
+[ValueSet]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253F_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253G
+Start=230
+Len=1
+
+[ValueSet]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253G_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253H
+Start=231
+Len=1
+
+[ValueSet]
+Label=NA - Dwelling sprayed by: CS
+Name=HV253H_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Dwelling sprayed by: other
+Name=HV253X
+Start=232
+Len=1
+
+[ValueSet]
+Label=Dwelling sprayed by: other
+Name=HV253X_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Dwelling sprayed by: don't know
+Name=HV253Z
+Start=233
+Len=1
+
+[ValueSet]
+Label=Dwelling sprayed by: don't know
+Name=HV253Z_VS1
+Value=0;No
+Value=1;Yes: don't know who sprayed the dwelling
+Value=8;Don't know if it was sprayed
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Wealth index
+Name=HV270
+Start=234
+Len=1
+
+[ValueSet]
+Label=Wealth index
+Name=HV270_VS1
+Value=1;Poorest
+Value=2;Poorer
+Value=3;Middle
+Value=4;Richer
+Value=5;Richest
+
+[Item]
+Label=Wealth index factor score (5 decimals)
+Name=HV271
+Start=235
+Len=8
+
+[Item]
+Label=Wealth index for urban/rural
+Name=HV270A
+Start=243
+Len=1
+
+[ValueSet]
+Label=Wealth index for urban/rural
+Name=HV270A_VS1
+Value=1;Poorest
+Value=2;Poorer
+Value=3;Middle
+Value=4;Richer
+Value=5;Richest
+
+[Item]
+Label=Wealth index factor score for urban/rural (5 decimals)
+Name=HV271A
+Start=244
+Len=8
+
+[Item]
+Label=Number of mosquito bed nets
+Name=HML1
+Start=252
+Len=2
+
+[ValueSet]
+Label=Number of mosquito bed nets
+Name=HML1_VS1
+Value=0:97
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Number of mosquito bed nets with specific information
+Name=HML1A
+Start=254
+Len=1
+
+[ValueSet]
+Label=Number of mosquito bed nets with specific information
+Name=HML1A_VS1
+Value=0:7
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Number of children under mosquito bed net previous night
+Name=HML2
+Start=255
+Len=2
+
+[ValueSet]
+Label=Number of children under mosquito bed net previous night
+Name=HML2_VS1
+Value=0:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=State
+Name=SHSTATE
+Start=257
+Len=3
+
+[ValueSet]
+Label=State
+Name=SHSTATE_VS1
+Value=10;Sokoto
+Value=20;Zamfara
+Value=30;Katsina
+Value=40;Jigawa
+Value=50;Yobe
+Value=60;Borno - Urban
+Value=70;Adamawa
+Value=80;Gombe
+Value=90;Bauchi
+Value=100;Kano
+Value=110;Kaduna
+Value=120;Kebbi
+Value=130;Niger
+Value=140;FCT Abuja
+Value=150;Nasarawa
+Value=160;Plateau
+Value=170;Taraba
+Value=180;Benue
+Value=190;Kogi
+Value=200;Kwara
+Value=210;Oyo
+Value=220;Osun
+Value=230;Ekiti
+Value=240;Ondo
+Value=250;Edo
+Value=260;Anambra
+Value=270;Enugu
+Value=280;Ebonyi
+Value=290;Cross River
+Value=300;Akwa Ibom
+Value=310;Abia
+Value=320;Imo
+Value=330;Rivers
+Value=340;Bayelsa
+Value=350;Delta
+Value=360;Lagos
+Value=370;Ogun
+
+[Item]
+Label=Language of interview
+Name=SHLANGINT
+Start=260
+Len=1
+
+[ValueSet]
+Label=Language of interview
+Name=SHLANGINT_VS1
+Value=1;Hausa
+Value=2;Yoruba
+Value=3;Igbo
+Value=4;English
+Value=6;Other
+
+[Item]
+Label=Native language of respondent
+Name=SHLANGNAT
+Start=261
+Len=1
+
+[ValueSet]
+Label=Native language of respondent
+Name=SHLANGNAT_VS1
+Value=1;Hausa
+Value=2;Yoruba
+Value=3;Igbo
+Value=4;English
+Value=6;Other
+
+[Item]
+Label=Translator used
+Name=SHTRANSL
+Start=262
+Len=1
+
+[ValueSet]
+Label=Translator used
+Name=SHTRANSL_VS1
+Value=0;No
+Value=1;Yes
+
+[Item]
+Label=Hour interview begins
+Name=SHBEGINH
+Start=263
+Len=2
+
+[Item]
+Label=Minutes interview begins
+Name=SHBEGINM
+Start=265
+Len=2
+
+[ValueSet]
+Label=Minutes interview begins
+Name=SHBEGINM_VS1
+Value=0:59
+
+[Item]
+Label=Hour interview ends
+Name=SHENDH
+Start=267
+Len=2
+
+[Item]
+Label=Minute interview ends
+Name=SHENDM
+Start=269
+Len=2
+
+[ValueSet]
+Label=Minute interview ends
+Name=SHENDM_VS1
+Value=0:59
+
+[Item]
+Label=Has cable TV
+Name=SH107G
+Start=271
+Len=1
+
+[ValueSet]
+Label=Has cable TV
+Name=SH107G_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has generating set
+Name=SH107H
+Start=272
+Len=1
+
+[ValueSet]
+Label=Has generating set
+Name=SH107H_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has air conditioner
+Name=SH107I
+Start=273
+Len=1
+
+[ValueSet]
+Label=Has air conditioner
+Name=SH107I_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has computer
+Name=SH107J
+Start=274
+Len=1
+
+[ValueSet]
+Label=Has computer
+Name=SH107J_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has electric iron
+Name=SH107K
+Start=275
+Len=1
+
+[ValueSet]
+Label=Has electric iron
+Name=SH107K_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Has fan
+Name=SH107L
+Start=276
+Len=1
+
+[ValueSet]
+Label=Has fan
+Name=SH107L_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Number of rooms total
+Name=SH112
+Start=277
+Len=2
+
+[ValueSet]
+Label=Number of rooms total
+Name=SH112_VS1
+Value=1:24
+
+[Item]
+Label=Number of sleeping facilities (sleeping bed, mattresses, etc)
+Name=SH112B
+Start=279
+Len=2
+
+[ValueSet]
+Label=Number of sleeping facilities (sleeping bed, mattresses, etc)
+Name=SH112B_VS1
+Value=0:50
+
+[Item]
+Label=Household respondent slept under a mosquito net
+Name=SH121A
+Start=281
+Len=1
+
+[ValueSet]
+Label=Household respondent slept under a mosquito net
+Name=SH121A_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Encourage use of net: could easily hang net
+Name=SH121BA
+Start=282
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: could easily hang net
+Name=SH121BA_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Encourage use of net: if net were not hot
+Name=SH121BB
+Start=283
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: if net were not hot
+Name=SH121BB_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Encourage use of net: if net did not smell
+Name=SH121BC
+Start=284
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: if net did not smell
+Name=SH121BC_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Encourage use of net: if net had a different color
+Name=SH121BD
+Start=285
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: if net had a different color
+Name=SH121BD_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Encourage use of net: if net were not itchy/irritating
+Name=SH121BE
+Start=286
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: if net were not itchy/irritating
+Name=SH121BE_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Encourage use of net: if net were bigger/not claustrophobic
+Name=SH121BF
+Start=287
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: if net were bigger/not claustrophobic
+Name=SH121BF_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Encourage use of net: if there were mosquitos present
+Name=SH121BG
+Start=288
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: if there were mosquitos present
+Name=SH121BG_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Encourage use of net: other
+Name=SH121BX
+Start=289
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: other
+Name=SH121BX_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Encourage use of net: don't know
+Name=SH121BZ
+Start=290
+Len=1
+
+[ValueSet]
+Label=Encourage use of net: don't know
+Name=SH121BZ_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason household doesn't have mosquito nets: no mosquitos
+Name=SH122A
+Start=291
+Len=1
+
+[ValueSet]
+Label=Reason household doesn't have mosquito nets: no mosquitos
+Name=SH122A_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason household doesn't have mosquito nets: not available
+Name=SH122B
+Start=292
+Len=1
+
+[ValueSet]
+Label=Reason household doesn't have mosquito nets: not available
+Name=SH122B_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason household doesn't have mosquito nets: don't like to use nets
+Name=SH122C
+Start=293
+Len=1
+
+[ValueSet]
+Label=Reason household doesn't have mosquito nets: don't like to use nets
+Name=SH122C_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason household doesn't have mosquito nets: too expensive
+Name=SH122D
+Start=294
+Len=1
+
+[ValueSet]
+Label=Reason household doesn't have mosquito nets: too expensive
+Name=SH122D_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason household doesn't have mosquito nets: other
+Name=SH122X
+Start=295
+Len=1
+
+[ValueSet]
+Label=Reason household doesn't have mosquito nets: other
+Name=SH122X_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Household has ever owned a mosquito net
+Name=SH123
+Start=296
+Len=1
+
+[ValueSet]
+Label=Household has ever owned a mosquito net
+Name=SH123_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason no longer have net: no mosquitos
+Name=SH124A
+Start=297
+Len=1
+
+[ValueSet]
+Label=Reason no longer have net: no mosquitos
+Name=SH124A_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason no longer have net: not available
+Name=SH124B
+Start=298
+Len=1
+
+[ValueSet]
+Label=Reason no longer have net: not available
+Name=SH124B_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason no longer have net: don't like to use nets
+Name=SH124C
+Start=299
+Len=1
+
+[ValueSet]
+Label=Reason no longer have net: don't like to use nets
+Name=SH124C_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason no longer have net: too expensive
+Name=SH124D
+Start=300
+Len=1
+
+[ValueSet]
+Label=Reason no longer have net: too expensive
+Name=SH124D_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason no longer have net: net was old
+Name=SH124E
+Start=301
+Len=1
+
+[ValueSet]
+Label=Reason no longer have net: net was old
+Name=SH124E_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason no longer have net: threw away net
+Name=SH124F
+Start=302
+Len=1
+
+[ValueSet]
+Label=Reason no longer have net: threw away net
+Name=SH124F_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason no longer have net: have window nets
+Name=SH124G
+Start=303
+Len=1
+
+[ValueSet]
+Label=Reason no longer have net: have window nets
+Name=SH124G_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Reason no longer have net: other
+Name=SH124X
+Start=304
+Len=1
+
+[ValueSet]
+Label=Reason no longer have net: other
+Name=SH124X_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Malaria sample weight (6 decimals)
+Name=SHMLWEIGHT
+Start=305
+Len=8
+
+[Item]
+Label=Line number
+Name=HVIDX
+Start=313
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Line number
+Name=HVIDX_VS1
+Value=1:90
+
+[Item]
+Label=Relationship to head
+Name=HV101
+Start=375
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Relationship to head
+Name=HV101_VS1
+Value=1;Head
+Value=2;Wife or husband
+Value=3;Son/daughter
+Value=4;Son/daughter-in-law
+Value=5;Grandchild
+Value=6;Parent
+Value=7;Parent-in-law
+Value=8;Brother/sister
+Value=9;Co-spouse
+Value=10;Other relative
+Value=11;Adopted/foster/step child
+Value=12;Not related
+Value=13;Niece/nephew by blood
+Value=14;Niece/nephew by marriage
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Usual resident
+Name=HV102
+Start=437
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Usual resident
+Name=HV102_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Slept last night
+Name=HV103
+Start=468
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Slept last night
+Name=HV103_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Sex of household member
+Name=HV104
+Start=499
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Sex of household member
+Name=HV104_VS1
+Value=1;Male
+Value=2;Female
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Age of household members
+Name=HV105
+Start=530
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Age of household members
+Name=HV105_VS1
+Value=0:94
+Value=95;95+
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Highest educational level attained
+Name=HV106
+Start=592
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Highest educational level attained
+Name=HV106_VS1
+Value=0;No education, preschool
+Value=1;Primary
+Value=2;Secondary
+Value=3;Higher
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Highest year of education completed
+Name=HV107
+Start=623
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Highest year of education completed
+Name=HV107_VS1
+Value=0:20
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Education completed in single years
+Name=HV108
+Start=685
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Education completed in single years
+Name=HV108_VS1
+Value=0:25
+Value=97;Inconsistent
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Educational attainment
+Name=HV109
+Start=747
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Educational attainment
+Name=HV109_VS1
+Value=0;No education
+Value=1;Incomplete primary
+Value=2;Complete primary
+Value=3;Incomplete secondary
+Value=4;Complete secondary
+Value=5;Higher
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Member still in school
+Name=HV110
+Start=778
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Member still in school
+Name=HV110_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Mother alive
+Name=HV111
+Start=809
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Mother alive
+Name=HV111_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Mother's line number
+Name=HV112
+Start=840
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=NA - Mother's line number
+Name=HV112_VS1
+Value=0;Mother not in household
+Value=1:90
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Father alive
+Name=HV113
+Start=902
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Father alive
+Name=HV113_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Father's line number
+Name=HV114
+Start=933
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=NA - Father's line number
+Name=HV114_VS1
+Value=0;Father not in household
+Value=1:90
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Current marital status
+Name=HV115
+Start=995
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Current marital status
+Name=HV115_VS1
+Value=0;Never married
+Value=1;Married
+Value=2;Living together
+Value=3;Widowed
+Value=4;Divorced
+Value=5;Not living together
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Currently, formerly, never married
+Name=HV116
+Start=1026
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Currently, formerly, never married
+Name=HV116_VS1
+Value=0;Never married
+Value=1;Currently married
+Value=2;Formerly/ever married
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Eligibility for female interview
+Name=HV117
+Start=1057
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Eligibility for female interview
+Name=HV117_VS1
+Value=0;Not eligible
+Value=1;Eligible
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Eligibility for male interview
+Name=HV118
+Start=1088
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Eligibility for male interview
+Name=HV118_VS1
+Value=0;Not eligible
+Value=1;Eligible
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Children eligibility for height/weight and hemoglobin
+Name=HV120
+Start=1119
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Children eligibility for height/weight and hemoglobin
+Name=HV120_VS1
+Value=0;Not eligible
+Value=1;Eligible
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Member attended school during current school year
+Name=HV121
+Start=1150
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Member attended school during current school year
+Name=HV121_VS1
+Value=0;No
+Value=1;Currently attending
+Value=2;Attended at some time
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Educational level during current school year
+Name=HV122
+Start=1181
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Educational level during current school year
+Name=HV122_VS1
+Value=0;No education, preschool
+Value=1;Primary
+Value=2;Secondary
+Value=3;Higher
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Grade of education during current school year
+Name=HV123
+Start=1212
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=NA - Grade of education during current school year
+Name=HV123_VS1
+Value=0:20
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Education in single years - current school year
+Name=HV124
+Start=1274
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=NA - Education in single years - current school year
+Name=HV124_VS1
+Value=0:20
+Value=97;Inconsistent
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Member attended school during previous school year
+Name=HV125
+Start=1336
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Member attended school during previous school year
+Name=HV125_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Educational level during previous school year
+Name=HV126
+Start=1367
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Educational level during previous school year
+Name=HV126_VS1
+Value=0;No education, preschool
+Value=1;Primary
+Value=2;Secondary
+Value=3;Higher
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Grade of education during previous school year
+Name=HV127
+Start=1398
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=NA - Grade of education during previous school year
+Name=HV127_VS1
+Value=0:20
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Education in single years - previous school year
+Name=HV128
+Start=1460
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=NA - Education in single years - previous school year
+Name=HV128_VS1
+Value=0:20
+Value=97;Inconsistent
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - School attendance status
+Name=HV129
+Start=1522
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - School attendance status
+Name=HV129_VS1
+Value=0;Never attended
+Value=1;Entered school
+Value=2;Advanced
+Value=3;Repeating
+Value=4;Dropout
+Value=5;Left school 2+ years ago
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Member has a birth certificate
+Name=HV140
+Start=1553
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Member has a birth certificate
+Name=HV140_VS1
+Value=0;Neither certificate or registered
+Value=1;Has certificate
+Value=2;Registered
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Index to Household Schedule
+Name=IDXH4
+Start=1584
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Index to Household Schedule
+Name=IDXH4_VS1
+Value=1:90
+
+[Item]
+Label=Currently pregnant
+Name=SH09
+Start=1646
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Currently pregnant
+Name=SH09_VS1
+Value=0;No/Don't know
+Value=1;Yes
+
+[Item]
+Label=Level of education attended
+Name=SH12A
+Start=1677
+Len=1
+Occurrences=31
+ZeroFill=Yes
+
+[ValueSet]
+Label=Level of education attended
+Name=SH12A_VS1
+Value=0;Pre-school
+Value=1;Primary
+Value=2;Secondary
+Value=3;Higher
+Value=8;Don't know
+
+[Item]
+Label=Highest grade attended
+Name=SH12B
+Start=1708
+Len=2
+Occurrences=31
+ZeroFill=Yes
+
+[ValueSet]
+Label=Highest grade attended
+Name=SH12B_VS1
+Value=0;< 1 year completed
+Value=1:6
+Value=7;7+ years
+Value=98;Don't know
+
+[Item]
+Label=Fever in last two weeks
+Name=SH13
+Start=1770
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Fever in last two weeks
+Name=SH13_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+
+[Item]
+Label=Treatment for fever in last two weeks
+Name=SH14
+Start=1801
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Treatment for fever in last two weeks
+Name=SH14_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+
+[Item]
+Label=Place first sought treatment
+Name=SH15
+Start=1832
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Place first sought treatment
+Name=SH15_VS1
+Value=1;Government hospital
+Value=2;Government health center
+Value=3;Government health clinic
+Value=4;Private hospital/clinic
+Value=5;Pharmacy
+Value=6;Private doctor
+Value=7;Mobile clinic
+Value=8;Chemist/PMV
+Value=9;Shop
+Value=10;Traditional practitioner
+Value=11;Role model caregiver/community worker
+Value=12;Drug hawker
+Value=13;Self treatment at home
+Value=96;Other
+Value=98;Don't know
+
+[Item]
+Label=Cost of treatment for fever (Naira)
+Name=SH16
+Start=1894
+Len=5
+Occurrences=31
+
+[ValueSet]
+Label=Cost of treatment for fever (Naira)
+Name=SH16_VS1
+Value=1:99989
+Value=99990;99990 or more Naira
+Value=99995;Free
+Value=99998;Don't know
+
+[Item]
+Label=Index to Household Schedule
+Name=HC0
+Start=2049
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Index to Household Schedule
+Name=HC0_VS1
+Value=1:90
+
+[Item]
+Label=Child's age in months
+Name=HC1
+Start=2061
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Child's age in months
+Name=HC1_VS1
+Value=0:60
+
+[Item]
+Label=NA - Child's weight in kilograms (1 decimal)
+Name=HC2
+Start=2073
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Child's weight in kilograms (1 decimal)
+Name=HC2_VS1
+Value=10:9990
+Value=9994;Not present
+Value=9995;Refused
+Value=9996;Other
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Child's height in centimeters (1 decimal)
+Name=HC3
+Start=2097
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Child's height in centimeters (1 decimal)
+Name=HC3_VS1
+Value=100:2000
+Value=9994;Not present
+Value=9995;Refused
+Value=9996;Other
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Height/Age percentile
+Name=HC4
+Start=2121
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Height/Age percentile
+Name=HC4_VS1
+Value=0:9997
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Height/Age standard deviation
+Name=HC5
+Start=2145
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Height/Age standard deviation
+Name=HC5_VS1
+Value=-600:600
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Height/Age percent of ref. median
+Name=HC6
+Start=2169
+Len=5
+Occurrences=6
+
+[ValueSet]
+Label=NA - Height/Age percent of ref. median
+Name=HC6_VS1
+Value=7500:15000
+Value=99998;Flagged cases
+Value=99999;Missing
+Name=MISSING,Special
+Value='     ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Weight/Age percentile
+Name=HC7
+Start=2199
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Weight/Age percentile
+Name=HC7_VS1
+Value=0:9997
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Weight/Age standard deviation
+Name=HC8
+Start=2223
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Weight/Age standard deviation
+Name=HC8_VS1
+Value=-600:600
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Weight/Age percent of ref. median
+Name=HC9
+Start=2247
+Len=5
+Occurrences=6
+
+[ValueSet]
+Label=NA - Weight/Age percent of ref. median
+Name=HC9_VS1
+Value=4000:19000
+Value=99998;Flagged cases
+Value=99999;Missing
+Name=MISSING,Special
+Value='     ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Weight/Height percentile
+Name=HC10
+Start=2277
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Weight/Height percentile
+Name=HC10_VS1
+Value=0:9997
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Weight/Height standard deviation
+Name=HC11
+Start=2301
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Weight/Height standard deviation
+Name=HC11_VS1
+Value=-600:600
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Weight/Height percent of ref. median
+Name=HC12
+Start=2325
+Len=5
+Occurrences=6
+
+[ValueSet]
+Label=NA - Weight/Height percent of ref. median
+Name=HC12_VS1
+Value=5500:19000
+Value=99998;Flagged cases
+Value=99999;Missing
+Name=MISSING,Special
+Value='     ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Result of measurement - height/weight
+Name=HC13
+Start=2355
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=NA - Result of measurement - height/weight
+Name=HC13_VS1
+Value=0;Measured
+Value=3;Not present
+Value=4;Refused
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=NA - Height: lying or standing
+Name=HC15
+Start=2361
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=NA - Height: lying or standing
+Name=HC15_VS1
+Value=0;Not measured
+Value=1;Lying
+Value=2;Standing
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Day of birth
+Name=HC16
+Start=2367
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Day of birth
+Name=HC16_VS1
+Value=1:31
+Value=97;Inconsistent
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Date measured (day)
+Name=HC17
+Start=2379
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Date measured (day)
+Name=HC17_VS1
+Value=1:31
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Date measured (month)
+Name=HC18
+Start=2391
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Date measured (month)
+Name=HC18_VS1
+Value=1:12
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Date measured (year)
+Name=HC19
+Start=2403
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=Date measured (year)
+Name=HC19_VS1
+Value=2010:2015
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Sex
+Name=HC27
+Start=2427
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Sex
+Name=HC27_VS1
+Value=1;Male
+Value=2;Female
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Month of birth
+Name=HC30
+Start=2433
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Month of birth
+Name=HC30_VS1
+Value=1:12
+Value=97;Inconsistent
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Year of birth
+Name=HC31
+Start=2445
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=Year of birth
+Name=HC31_VS1
+Value=2005:2015
+Value=9997;Inconsistent
+Value=9998;Don't know
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Date of birth (CMC)
+Name=HC32
+Start=2469
+Len=4
+Occurrences=6
+
+[Item]
+Label=Completeness of HC32 information
+Name=HC33
+Start=2493
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Completeness of HC32 information
+Name=HC33_VS1
+Value=1;Month and year - information complete
+Value=2;Month and age - year imputed
+Value=3;Year and age - month imputed
+Value=6;Age - year/month imputed
+Value=7;Month - age/year imputed
+Value=8;None - all imputed
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of parent/caretaker
+Name=HC51
+Start=2499
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Line number of parent/caretaker
+Name=HC51_VS1
+Value=0;Not in household
+Value=1:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Read consent statement - hemoglobin
+Name=HC52
+Start=2511
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Read consent statement - hemoglobin
+Name=HC52_VS1
+Value=1;Granted
+Value=2;Refused
+Value=4;Not present
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Hemoglobin level (g/dl - 1 decimal)
+Name=HC53
+Start=2517
+Len=3
+Occurrences=6
+
+[ValueSet]
+Label=Hemoglobin level (g/dl - 1 decimal)
+Name=HC53_VS1
+Value=10:990
+Value=994;Not present
+Value=995;Refused
+Value=996;Other
+Value=999;Missing
+Name=MISSING,Special
+Value='   ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Result of measurement - hemoglobin
+Name=HC55
+Start=2535
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Result of measurement - hemoglobin
+Name=HC55_VS1
+Value=0;Measured
+Value=3;Not present
+Value=4;Refused
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Hemoglobin level adjusted for altitude (g/dl - 1 decimal)
+Name=HC56
+Start=2541
+Len=3
+Occurrences=6
+
+[ValueSet]
+Label=Hemoglobin level adjusted for altitude (g/dl - 1 decimal)
+Name=HC56_VS1
+Value=36:157
+Value=997;Inconsistent
+Value=999;Missing
+Name=MISSING,Special
+Value='   ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Anemia level
+Name=HC57
+Start=2559
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Anemia level
+Name=HC57_VS1
+Value=1;Severe
+Value=2;Moderate
+Value=3;Mild
+Value=4;Not anemic
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Agrees to referral - anemia
+Name=HC58
+Start=2565
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=NA - Agrees to referral - anemia
+Name=HC58_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Mother's line number (woman's questionnaire)
+Name=HC60
+Start=2571
+Len=3
+Occurrences=6
+
+[ValueSet]
+Label=Mother's line number (woman's questionnaire)
+Name=HC60_VS1
+Value=1:50
+Value=993;Mother not de facto
+Value=994;Incomplete woman's interview
+Value=995;Not in household
+Value=999;Missing
+Name=MISSING,Special
+Value='   ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Mother's highest educational level
+Name=HC61
+Start=2589
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Mother's highest educational level
+Name=HC61_VS1
+Value=0;No education
+Value=1;Primary
+Value=2;Secondary
+Value=3;Higher
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Mother's highest year of education
+Name=HC62
+Start=2595
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Mother's highest year of education
+Name=HC62_VS1
+Value=0;No education
+Value=1:7
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Preceding birth interval (months)
+Name=HC63
+Start=2607
+Len=3
+Occurrences=6
+
+[ValueSet]
+Label=Preceding birth interval (months)
+Name=HC63_VS1
+Value=999;Missing
+Name=MISSING,Special
+Value='   ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Birth order number
+Name=HC64
+Start=2625
+Len=2
+Occurrences=6
+
+[ValueSet]
+Label=Birth order number
+Name=HC64_VS1
+Value=1:20
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Mother's highest educational level (for preliminary and final report)
+Name=HC68
+Start=2637
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Mother's highest educational level (for preliminary and final report)
+Name=HC68_VS1
+Value=0;No education
+Value=1;Primary
+Value=2;Secondary
+Value=3;Higher
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Height/Age standard deviation (new WHO)
+Name=HC70
+Start=2643
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Height/Age standard deviation (new WHO)
+Name=HC70_VS1
+Value=-600:600
+Value=9996;Height out of plausible limits
+Value=9997;Age in days out of plausible limits
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Weight/Age standard deviation (new WHO)
+Name=HC71
+Start=2667
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Weight/Age standard deviation (new WHO)
+Name=HC71_VS1
+Value=-600:500
+Value=9996;Height out of plausible limits
+Value=9997;Age in days out of plausible limits
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Weight/Height standard deviation (new WHO)
+Name=HC72
+Start=2691
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - Weight/Height standard deviation (new WHO)
+Name=HC72_VS1
+Value=-600:500
+Value=9996;Height out of plausible limits
+Value=9997;Age in days out of plausible limits
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - BMI standard deviation (new WHO)
+Name=HC73
+Start=2715
+Len=4
+Occurrences=6
+
+[ValueSet]
+Label=NA - BMI standard deviation (new WHO)
+Name=HC73_VS1
+Value=-600:500
+Value=9996;Height out of plausible limits
+Value=9997;Age in days out of plausible limits
+Value=9998;Flagged cases
+Value=9999;Missing
+Name=MISSING,Special
+Value='    ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Mosquito Bed Net Designation Number
+Name=HMLIDX
+Start=2739
+Len=2
+Occurrences=7
+
+[Item]
+Label=Net observed by interviewer
+Name=HML3
+Start=2753
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Net observed by interviewer
+Name=HML3_VS1
+Value=0;Not seen
+Value=1;Yes, seen
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Months ago net obtained
+Name=HML4
+Start=2760
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Months ago net obtained
+Name=HML4_VS1
+Value=0:36
+Value=96;More than 3 years ago
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Net treated with insecticide when bought
+Name=HML5
+Start=2774
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=NA - Net treated with insecticide when bought
+Name=HML5_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Net treatment status
+Name=HML6
+Start=2781
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Net treatment status
+Name=HML6_VS1
+Value=0;Not pretreated
+Value=1;Pretreated, permanent treatment
+Value=2;Pretreated, requiring future treatment
+Value=3;Not pretreated, came with kit and treated at home
+Value=4;Pretreated, treatment type not known
+Value=6;Other
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Brand of net
+Name=HML7
+Start=2788
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Brand of net
+Name=HML7_VS1
+Value=10;Long-lasting insectiside treated nets (LLIN)
+Value=11;Permanet
+Value=12;Olyset
+Value=13;Iconlife
+Value=14;Duranet
+Value=15;Netprotect
+Value=16;BASF Interceptor
+Value=17;Other/Don't know brand LLIN
+Value=96;Other brand
+Value=98;Don't know brand
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Net treated since receiving
+Name=HML8
+Start=2802
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Net treated since receiving
+Name=HML8_VS1
+Value=0;No
+Value=1;Yes
+Value=2;Permanent net
+Value=8;Not sure
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Time since last re-treatment (months)
+Name=HML9
+Start=2809
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Time since last re-treatment (months)
+Name=HML9_VS1
+Value=0:24
+Value=95;25+ months ago
+Value=96;More than 2 years ago
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Insecticide-Treated Net (ITN)
+Name=HML10
+Start=2823
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Insecticide-Treated Net (ITN)
+Name=HML10_VS1
+Value=0;No, don't know
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Number of persons who slept under this net
+Name=HML11
+Start=2830
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Number of persons who slept under this net
+Name=HML11_VS1
+Value=0:4
+Value=5;5+
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Someone slept under this net last night
+Name=HML21
+Start=2837
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Someone slept under this net last night
+Name=HML21_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Not sure (DK)
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLA
+Start=2844
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLA_VS1
+Value=0;No one
+Value=1:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLB
+Start=2858
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLB_VS1
+Value=1:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLC
+Start=2872
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLC_VS1
+Value=1:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLD
+Start=2886
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLD_VS1
+Value=1:50
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLE
+Start=2900
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLE_VS1
+Value=1:50
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Index to Household Schedule
+Name=HMHIDX
+Start=2914
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Index to Household Schedule
+Name=HMHIDX_VS1
+Value=1:90
+
+[Item]
+Label=Type of Mosquito Bed Net(s) person slept under last night
+Name=HML12
+Start=2976
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Type of Mosquito Bed Net(s) person slept under last night
+Name=HML12_VS1
+Value=0;Did not sleep under a net
+Value=1;Only treated (ITN) nets
+Value=2;Both treated (ITN) and untreated nets
+Value=3;Only untreated nets
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Net Designation Number (HMLIDX) for 1st net person slept under last night
+Name=HML13
+Start=3007
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Net Designation Number (HMLIDX) for 1st net person slept under last night
+Name=HML13_VS1
+Value=0;Did not sleep under net
+Value=1:7
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Net Designation Number (HMLIDX) for 2nd net person slept under last night
+Name=HML14
+Start=3038
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Net Designation Number (HMLIDX) for 2nd net person slept under last night
+Name=HML14_VS1
+Value=1:7
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Net Designation Number (HMLIDX) for 3rd net person slept under last night
+Name=HML15
+Start=3069
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Net Designation Number (HMLIDX) for 3rd net person slept under last night
+Name=HML15_VS1
+Value=1:7
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Corrected age from Individual file
+Name=HML16
+Start=3100
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Corrected age from Individual file
+Name=HML16_VS1
+Value=0:96
+Value=97;97+
+Value=98;Don't know
+Value=99;Missing
+Name=MISSING,Special
+
+[Item]
+Label=Age in months (for children)
+Name=HML16A
+Start=3162
+Len=2
+Occurrences=31
+
+[Item]
+Label=Flag for age from Individual file
+Name=HML17
+Start=3224
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Flag for age from Individual file
+Name=HML17_VS1
+Value=0;No data from Individual file
+Value=1;Month and year - information complete
+Value=2;Month and age - year imputed
+Value=3;Year and age - month imputed
+Value=4;Year and age - year ignored
+Value=5;Year - age/month imputed
+Value=6;Age - year/month imputed
+Value=7;Month - age/year imputed
+Value=8;None - all imputed
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Pregnancy status from Individual file
+Name=HML18
+Start=3255
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Pregnancy status from Individual file
+Name=HML18_VS1
+Value=0;Not pregnant, don't know
+Value=1;Pregnant
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Person slept under an ever-treated net
+Name=HML19
+Start=3286
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Person slept under an ever-treated net
+Name=HML19_VS1
+Value=0;No
+Value=1;Yes
+
+[Item]
+Label=Person slept under an LLIN net
+Name=HML20
+Start=3317
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Person slept under an LLIN net
+Name=HML20_VS1
+Value=0;No
+Value=1;Yes
+
+[Item]
+Label=Line number of parent/caretaker (for malaria testing)
+Name=HML30
+Start=3348
+Len=2
+Occurrences=31
+
+[ValueSet]
+Label=Line number of parent/caretaker (for malaria testing)
+Name=HML30_VS1
+Value=0;Not in household
+Value=1:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Read consent statement for malaria
+Name=HML31
+Start=3410
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Read consent statement for malaria
+Name=HML31_VS1
+Value=1;Granted
+Value=2;Refused
+Value=4;Not present
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Final result of malaria from blood smear test
+Name=HML32
+Start=3441
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Final result of malaria from blood smear test
+Name=HML32_VS1
+Value=0;Negative
+Value=1;Positive
+Value=6;Test undetermined
+Value=7;Sample not found in lab database
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Presence of species: falciparum (Pf)
+Name=HML32A
+Start=3472
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Presence of species: falciparum (Pf)
+Name=HML32A_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Presence of species: malariae (Pm)
+Name=HML32B
+Start=3503
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Presence of species: malariae (Pm)
+Name=HML32B_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Presence of species: ovale (Po)
+Name=HML32C
+Start=3534
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Presence of species: ovale (Po)
+Name=HML32C_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Presence of species: vivax (Pv)
+Name=HML32D
+Start=3565
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Presence of species: vivax (Pv)
+Name=HML32D_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Presence of species: CS
+Name=HML32E
+Start=3596
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Presence of species: CS
+Name=HML32E_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Presence of species: CS
+Name=HML32F
+Start=3627
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Presence of species: CS
+Name=HML32F_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=NA - Presence of species: CS
+Name=HML32G
+Start=3658
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=NA - Presence of species: CS
+Name=HML32G_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Result of malaria measurement
+Name=HML33
+Start=3689
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Result of malaria measurement
+Name=HML33_VS1
+Value=0;Measured
+Value=3;Not present
+Value=4;Refused
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Bar code for blood smear sample
+Name=HML34
+Start=3720
+Len=5
+DataType=Alpha
+Occurrences=31
+
+[ValueSet]
+Label=Bar code for blood smear sample
+Name=HML34_VS1
+Value=99993;Sample damaged/insufficient/not found in lab
+Value=99994;Not present
+Value=99995;Refused
+Value=99996;Other
+Value='?    ';Missing
+
+[Item]
+Label=Result of malaria rapid test
+Name=HML35
+Start=3875
+Len=1
+Occurrences=31
+
+[ValueSet]
+Label=Result of malaria rapid test
+Name=HML35_VS1
+Value=0;Negative
+Value=1;Positive
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Index to net
+Name=HMCSIDX
+Start=3906
+Len=1
+Occurrences=7
+
+[Item]
+Label=Shown Net
+Name=SH126
+Start=3913
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Shown Net
+Name=SH126_VS1
+Value=0;Not observed
+Value=1;Observed, but has holes
+Value=2;Observed, does not have holes
+
+[Item]
+Label=Observe or ask if net hanging
+Name=SH127
+Start=3920
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Observe or ask if net hanging
+Name=SH127_VS1
+Value=1;Observed, hanging
+Value=2;Observed, not hanging
+Value=3;Not observed, hanging
+Value=4;Not observed, not hanging
+
+[Item]
+Label=Color of net, observed
+Name=SH127A
+Start=3927
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Color of net, observed
+Name=SH127A_VS1
+Value=1;Green
+Value=2;Dark blue
+Value=3;Light blue
+Value=4;Red
+Value=5;Black
+Value=6;White
+Value=96;Other
+
+[Item]
+Label=Shape of net, observed
+Name=SH127B
+Start=3941
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Shape of net, observed
+Name=SH127B_VS1
+Value=1;Conical
+Value=2;Rectangle
+Value=6;Other
+
+[Item]
+Label=Size of net, observed
+Name=SH127C
+Start=3948
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Size of net, observed
+Name=SH127C_VS1
+Value=1;Cot/crib
+Value=2;Single
+Value=3;Double (usual campaign net)
+Value=4;Triple
+Value=6;Other
+
+[Item]
+Label=Obtained net from campaign, ANC, or immunizations
+Name=SH128A
+Start=3955
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Obtained net from campaign, ANC, or immunizations
+Name=SH128A_VS1
+Value=0;No
+Value=1;Yes, campaign
+Value=2;Yes, ANC
+Value=3;Yes, immunization
+
+[Item]
+Label=Place obtained net
+Name=SH129
+Start=3962
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Place obtained net
+Name=SH129_VS1
+Value=1;Primary health center / health post
+Value=2;Government hospital
+Value=3;Private hospital
+Value=4;NGO clinic
+Value=5;Mission clinic
+Value=6;Mosque/church
+Value=7;Pharmacy
+Value=8;Patent medicine store
+Value=9;Shop/supermarket
+Value=10;Open market
+Value=11;Hawker
+Value=12;School
+Value=13;Community directed distributors (CDD)
+Value=96;Other
+Value=98;Don't know
+
+[Item]
+Label=Net bought
+Name=SH130
+Start=3976
+Len=1
+Occurrences=7
+
+[ValueSet]
+Label=Net bought
+Name=SH130_VS1
+Value=1;Bought
+Value=2;Free
+Value=8;Don't know
+
+[Item]
+Label=Cost of net (Naira)
+Name=SH131
+Start=3983
+Len=5
+Occurrences=7
+
+[ValueSet]
+Label=Cost of net (Naira)
+Name=SH131_VS1
+Value=1:99995
+Value=99998;Don't know
+
+[Item]
+Label=Reason nobody slept under net
+Name=SH136
+Start=4018
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Reason nobody slept under net
+Name=SH136_VS1
+Value=1;No mosquitos
+Value=2;No malaria
+Value=3;Too hot
+Value=4;Difficult to hang
+Value=5;Don't like smell
+Value=6;Feel 'closed in' or contstrained
+Value=7;Net too old or torn
+Value=8;Net too dirty
+Value=9;Net not available last night (washing)
+Value=10;Feel ITN chemicals are unsage
+Value=11;ITN provokes coughing
+Value=12;Usual users did not sleep here last night
+Value=13;Net not needed last night
+Value=14;No space to hang
+Value=96;Other
+Value=98;Don't know
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLA1
+Start=4032
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLA1_VS1
+Value=0;No one
+Value=1:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLB1
+Start=4046
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLB1_VS1
+Value=1:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLC1
+Start=4060
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLC1_VS1
+Value=1:50
+Value=99;Missing
+Name=MISSING,Special
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLD1
+Start=4074
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLD1_VS1
+Value=1:50
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Line number of person who slept in this net
+Name=HMLE1
+Start=4088
+Len=2
+Occurrences=7
+
+[ValueSet]
+Label=Line number of person who slept in this net
+Name=HMLE1_VS1
+Value=1:50
+Value='  ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Index to household schedule
+Name=H6BIDX
+Start=4102
+Len=2
+Occurrences=6
+
+[Item]
+Label=Hemoglobin result (of children with positive RDT)
+Name=SH216
+Start=4114
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Hemoglobin result (of children with positive RDT)
+Name=SH216_VS1
+Value=1;Below 8.0 g/dL, severe anemia
+Value=2;8.0 g/dL or above
+Value=4;Not present
+Value=5;Refused
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: extreme weakness
+Name=SH218A
+Start=4120
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: extreme weakness
+Name=SH218A_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: heart problems
+Name=SH218B
+Start=4126
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: heart problems
+Name=SH218B_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: loss of consciousness
+Name=SH218C
+Start=4132
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: loss of consciousness
+Name=SH218C_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: rapid breathing
+Name=SH218D
+Start=4138
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: rapid breathing
+Name=SH218D_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: seizures
+Name=SH218E
+Start=4144
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: seizures
+Name=SH218E_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: bleeding
+Name=SH218F
+Start=4150
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: bleeding
+Name=SH218F_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: jaundice
+Name=SH218G
+Start=4156
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: jaundice
+Name=SH218G_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: dark urine
+Name=SH218H
+Start=4162
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: dark urine
+Name=SH218H_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from: no symptoms
+Name=SH218Y
+Start=4168
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from: no symptoms
+Name=SH218Y_VS1
+Value=0;No
+Value=1;Yes
+Value=8;Don't know
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child with positive RDT suffers from any symptoms
+Name=SH219
+Start=4174
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child with positive RDT suffers from any symptoms
+Name=SH219_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Child has taken Coartem/ACT from doctor or health center
+Name=SH221
+Start=4180
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Child has taken Coartem/ACT from doctor or health center
+Name=SH221_VS1
+Value=0;No
+Value=1;Yes
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
+
+[Item]
+Label=Accepted malaria treatement medicine
+Name=SH225
+Start=4186
+Len=1
+Occurrences=6
+
+[ValueSet]
+Label=Accepted malaria treatement medicine
+Name=SH225_VS1
+Value=1;Accepted medicine
+Value=2;Refused
+Value=6;Other
+Value=9;Missing
+Name=MISSING,Special
+Value=' ';Not applicable
+Name=NOTAPPL,Special
