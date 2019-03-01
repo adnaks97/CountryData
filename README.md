@@ -5,6 +5,7 @@
 - [x] Nigeria
 - [ ] Malawi
 - [ ] Rwanda
+
 **Others**
 - [ ] Configure static Maps API
 - [ ] Unet feature extraction from images
