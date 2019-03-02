@@ -7,7 +7,7 @@ import sys
 
 if __name__ == '__main__':
     country = sys.argv[1]
-    dataFile = country + '/HR/HR.csv' # Rename Houehold Recode folder as HR, the csv as HR.csv
+    dataFile = country + '/DHS/HR/HR.csv' # Rename Houehold Recode folder as HR, the csv as HR.csv
     data = pd.read_csv(dataFile)
     data.head()
     data.rename(columns={'hv001':'DHSCLUST', 'hv270':'WEALTH_CAT', 'hv271':'WEALTH_IND'}, inplace=True)
