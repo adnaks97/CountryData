@@ -1,3 +1,15 @@
+# Country Data Consolidation
+### TODO
+**Countries to Add**
+- [x] Tanzania
+- [x] Nigeria
+- [ ] Malawi
+- [ ] Rwanda
+
+**Others**
+- [ ] Configure static Maps API
+- [ ] Unet feature extraction from images
+
 ### DHS
 #### HR (Household Recode files)
 **hv0001** - DHSCluster (Locn)
