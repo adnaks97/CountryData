@@ -7,8 +7,8 @@
 - [ ] Rwanda
 
 **Others**
-- [ ] Configure static Maps API
-- [ ] Unet feature extraction from images
+- [x] Configure static Maps API
+- [x] Unet feature extraction from images
 
 ### DHS
 #### HR (Household Recode files)
